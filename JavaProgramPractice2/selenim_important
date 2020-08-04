@@ -1,0 +1,7 @@
+Method to take screenshot
+
+public static void takeSnapShot(Webdriver webdriver,String filewithpath){
+    // Take screenshot with the help of driver but for that we need to cast webdriver object TakeScreenShot object
+  TakeScreenshot srcShot=((TakeScreenshot)webdriver);
+   File SrcFile=srcShot.getScreenshotAs(OutputType.FILE);
+}
